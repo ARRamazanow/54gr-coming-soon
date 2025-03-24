@@ -1,0 +1,22 @@
+{
+  "name": "54gr-coming-sun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARRamazanow/54gr-coming-sun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ARRamazanow/54gr-coming-sun/issues"
+  },
+  "homepage": "https://github.com/ARRamazanow/54gr-coming-sun#readme",
+  "dependencies": {
+    "dead-server": "^1.0.9"
+  }
+}
