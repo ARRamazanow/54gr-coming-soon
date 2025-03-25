@@ -11,7 +11,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at: https://github.com/ARRamazanow/54gr-coming-soon
 
-Design: ![alt text](./hero.png)
+Design: ![alt text](./project-design.png)
 
 
 ### 54gr-coming-soon 
