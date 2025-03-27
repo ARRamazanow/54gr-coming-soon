@@ -36,3 +36,13 @@ body {
 .center {
   text-align: center;
 }
+
+.hero {
+  background-image: url(../../coming-img/hero.png);
+  justify-self: center;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
