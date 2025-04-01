@@ -1,12 +1,12 @@
 @font-face {
   font-family: Roboto;
-  src: url(../../font/static/Roboto-Regular.ttf);
+  src: url(../../fonts/Roboto/static/Roboto-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Roboto;
-  src: url(../../font/static/Roboto-Bold.ttf);
+  src: url(../../fonts/Roboto/static/Roboto-Bold.ttf);
   font-weight: bold;
   font-style: normal;
 }
@@ -19,7 +19,8 @@ body * {
 }
 
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
 }
 
 .bg-blue {
@@ -39,10 +40,55 @@ body {
 
 .hero {
   min-height: 100vh;
-  justify-self: center;
+  justify-content: center;
   background-image: url(../../coming-img/hero.png);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+footer {
+  color: #fffc;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.trio {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.trio > p {
+  position: relative;
+}
+.trio > p::after {
+  content: '';
+  display: block;
+  width: 0.1rem;
+  height: 1em;
+  margin-left: 0.7rem;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -0.55rem;
+  transform: translateY(-50%);
+}
+.trio > p:last-child::after {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .trio {
+    flex-direction: column;
+  }
+  .trio > p::after {
+    display: none;
+  }
 }
