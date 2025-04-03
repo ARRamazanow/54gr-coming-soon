@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <title>Coming sun</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-
+    <meta name="apple-mobile-web-app-title" content="Projekto pavadinimas" />
     <link rel="manifest" href="/favicon/site.webmanifest">
-
-<link rel="stylesheet" href="/css/pages/coming-soon.css">
-
-    <title>Coming sun</title>
+    <link rel="stylesheet" href="/css/pages/coming-soon.css">
 </head>
 <body>
     <main>
@@ -80,14 +76,64 @@
                 <div class="column right-column">
                     <h2>Have any question?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident mollitia, quasi eum aut id voluptatum earum molestias unde? Quia facilis delectus suscipit obcaecati? Quas sequi cum cupiditate maiores tempora laudantium.</p>
+
+                    <form action="/api" method="post">
+                        <div>
+                            <input id="user_role" type="text" value="buyer" name="role" hidden>
+                        </div>
+                        <div>
+                            <label for="id">User id</label>
+                            <input id="id" type="text" value="5254516258456" name="id" readonly>
+                        </div>
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" type="text" value="Kulverstukas" name="name" autocomplete="name" placeholder="Vardas">
+                        </div>
+                        <div>
+                            <label for="surname">Surname</label>
+                            <input id="surname" type="text" value="Kulverstukas" name="surname" autocomplete="family-name">
+                        </div>
+                        <div>
+                            <label for="username">Username</label>
+                            <input id="username" type="text" value="Kulverstukas" name="username" autocomplete="username">
+                        </div>
+                        <div>
+                            <label for="email">Your email</label>
+                            <input id="email" type="email" name="email" value="@mail" autocomplete="email" autofocus>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input id="password" type="password" name="password" value="*********" autocomplete="new-password">
+                            <button type="button">akis</button>
+                        </div>
+                        <div>
+                            <button type="reset">Reset</button>
+                            <button type="submit">Register</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="container bg-blue">
+
+
+    <footer class="container footer bg-blue">
+        
+        <div class="row">
+            <div class="socials">
+                <a class="fa fa-facebook" href="#" target="_blank"></a>
+                <a class="fa fa-twitter" href="#" target="_blank"></a>
+                <a class="fa fa-dribbble" href="#" target="_blank"></a>
+                <a class="fa fa-tumblr" href="#" target="_blank"></a>
+                <a class="fa fa-linkedin" href="#" target="_blank"></a>
+                <a class="fa fa-instagram" href="#" target="_blank"></a>
+                <a class="fa fa-rss" href="#" target="_blank"></a>
+            </div>
+            <a href="#" class="back-to-top fa fa-angle-up"></a>
+        </div>
         <div class="row-short">
-            <img class="logo" src="./img/logo-white.png" alt="Matrox logo">
+            <img class="logo" src="/coming-img/logo-white.png" alt="Matrox logo">
             <div class="trio">
                 <p>Copyright &copy; 2025 <a href="#">Matrox</a></p>
                 <p>All rights reserved</p>
